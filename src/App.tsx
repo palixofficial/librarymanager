@@ -1,7 +1,13 @@
-import "./App.css";
+import LibraryContext, { useLibrary } from "./hooks/LibraryContext";
 
 function App() {
-  return <div className="App"></div>;
+  const library = useLibrary();
+
+  return (
+    <>
+      <LibraryContext.Provider value={library}></LibraryContext.Provider>
+    </>
+  );
 }
 
 export default App;

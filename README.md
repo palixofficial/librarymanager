@@ -17,6 +17,7 @@
 // A Provider komponensbe helyezzük az alkalmazás globális állapotait.
 
 // A) books Állapot: Hozz létre egy állapotot a LibraryProvider-ben books néven, amely a könyvek tömbjét tárolja. Kezdőérték legyen egy előre definiált tömb legalább 10 könyvvel (cím, szerző, év, műfaj, oldalszám, olvasott boolean). (1 pont)
+
 // B) searchTerm Állapot: Hozz létre egy string állapotot searchTerm néven a keresési kifejezés tárolására (kezdőérték: üres string ""). (1 pont)
 // C) sortBy Állapot: Hozz létre egy állapotot sortBy néven, amely tárolja a rendezési szempontot (kezdőérték: "title"). Lehetséges értékek: "title", "author", "year". (1 pont)
 // D) Context Érték: Hozd létre a contextValue objektumot, amely tartalmazza a books, searchTerm és sortBy állapotokat, valamint a frissítő függvényeiket (setBooks, setSearchTerm, setSortBy). (1 pont)
