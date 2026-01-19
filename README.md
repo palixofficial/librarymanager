@@ -63,12 +63,12 @@
 
 // Formázd meg az alkalmazást CSS-el vagy inline style-okkal!
 // - Készíts reszponzív elrendezést
-// - Különböztess meg vizuálisan az olvasott és olvasatlan könyveket
+// + Különböztess meg vizuálisan az olvasott és olvasatlan könyveket
 // - Add hozzá a különböző műfajokhoz különböző színeket
-// - Készíts szép kártyákat a könyvekhez
-// - Implementálj egy statisztika komponenst (összes könyv, olvasott könyvek száma, átlagos oldalszám)
+// + Készíts szép kártyákat a könyvekhez
+// + Implementálj egy statisztika komponenst (összes könyv, olvasott könyvek száma, átlagos oldalszám)
 // - Add hozzá a lehetőséget könyvek szerkesztésére (EditBookForm)
-// - Készíts szűrést műfaj alapján is
+// + Készíts szűrést műfaj alapján is
 
 // Példa könyvek kezdőértékhez:
 /_

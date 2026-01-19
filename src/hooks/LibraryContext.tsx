@@ -8,7 +8,7 @@ import {
 } from "react";
 import { Book, Books } from "../types/Books";
 
-export type sortByType = "title" | "author" | "year";
+export type sortByType = "title" | "author" | "year" | "genre";
 
 const LibraryContext = createContext<{
   books: Book[];
@@ -38,7 +38,13 @@ export function LibraryProvider({ children }: { children: React.ReactNode }) {
     filteredBooks.sort((current, next) => {
       if (sortBy === "title") {
         return current.title.localeCompare(next.title);
-      } else return current.author.localeCompare(next.author);
+      } else if (sortBy === "author") {
+        return current.author.localeCompare(next.author);
+      } else if (sortBy === "genre") {
+        return current.genre.localeCompare(next.genre);
+      } else {
+        return current.year - next.year;
+      }
     });
     return filteredBooks;
   }, [books, searchTerm, sortBy]);
